@@ -1,6 +1,6 @@
 # Tailwind Classnames
 
-![npm](https://img.shields.io/npm/v/twc) ![npm](https://img.shields.io/npm/dt/tw-classnames) ![NPM](https://img.shields.io/npm/l/tw-classnames)
+![npm](https://img.shields.io/npm/v/tw-classnames) ![npm](https://img.shields.io/npm/dt/tw-classnames) ![NPM](https://img.shields.io/npm/l/tw-classnames)
 
 `twc` aka tw-classnames is a lightweight utility function that simplifies the process of merging Tailwind Classes while also supporting conditional classes within objects.
 
