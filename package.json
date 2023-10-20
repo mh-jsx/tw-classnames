@@ -2,13 +2,16 @@
   "name": "tw-classnames",
   "version": "1.0.4",
   "description": "",
-  "main": "cnx.js",
+  "main": "twc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "clsx": "^2.0.0",
     "tailwind-merge": "^1.14.0"
