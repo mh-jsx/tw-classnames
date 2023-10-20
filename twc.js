@@ -2,8 +2,8 @@ const { clsx } = require("clsx");
 const { twMerge } = require("tailwind-merge");
 
 
- function twc(...input) {
-    return twMerge(clsx(...input));
+ function twc(...inputs) {
+    return twMerge(clsx(inputs));
 }
 
 module.exports = twc;
