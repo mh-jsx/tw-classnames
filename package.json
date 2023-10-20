@@ -1,0 +1,16 @@
+{
+  "name": "tw-classnames",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cnx.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^1.14.0"
+  }
+}
