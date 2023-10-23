@@ -1,7 +1,7 @@
 {
   "name": "tw-classnames",
   "version": "1.0.5",
-  "description": "",
+  "description": "A lightweight utility function that simplifies the process of merging Tailwind Classes.",
   "main": "twc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,11 +9,40 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "tailwind",
+    "tw",
+    "classnames",
+    "clsx",
+    "tw-classnames",
+    "twc",
+    "twc-jsx",
+    "twc-jsx-plugin",
+    "tw-merge",
+    "cn",
+    "twc-jsx-plugin",
+    "utility",
+    "utility-function",
+    "util",
+    "css",
+    "classes",
+    "react",
+    "classname"
+  ],
+  "files": [
+    "*.js",
+    "*.d.ts",
+    "README.md"
+  ],
+  "author": "Mudassar H",
   "license": "MIT",
   "dependencies": {
     "clsx": "^2.0.0",
     "tailwind-merge": "^1.14.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mh-jsx/tw-classnames"
+  },
+  "types": "twc.d.ts"
 }
