@@ -44,4 +44,59 @@ describe("twc function", () => {
     const result = twc("bg-yellow-300", classes);
     expect(result).toBe("bg-yellow-300 text-green-500 p-2");
   });
+
+  it("should handle an array of class names", () => {
+    const result = twc("bg-blue-500", ["text-white", "p-4"]);
+    expect(result).toBe("bg-blue-500 text-white p-4");
+  });
+
+  it("should handle an array of class names with conditional classes", () => {
+    const isActive = true;
+    const result = twc("bg-blue-500", [
+      "text-white",
+      { "font-bold": isActive },
+    ]);
+    expect(result).toBe("bg-blue-500 text-white font-bold");
+  });
+
+  it("should handle an array of class names with null and undefined values", () => {
+    const result = twc("bg-blue-500", ["text-white", null, undefined, "p-4"]);
+    expect(result).toBe("bg-blue-500 text-white p-4");
+  });
+
+  it("should handle an array of class names with numbers as class names", () => {
+    const result = twc("bg-blue-500", [42, "text-red-500", 7]);
+    expect(result).toBe("bg-blue-500 42 text-red-500 7");
+  });
+
+  it("should handle an array of class names with boolean values", () => {
+    const result = twc("bg-blue-500", [true, false]);
+    expect(result).toBe("bg-blue-500");
+  });
+
+  it("should handle an array of class names with an object with multiple classes", () => {
+    const classes = {
+      "text-green-500": true,
+      "font-bold": false,
+      "p-2": true,
+    };
+    const result = twc("bg-yellow-300", ["text-white", classes]);
+    expect(result).toBe("bg-yellow-300 text-green-500 p-2");
+  });
+
+  it("should handle an array of class names with an array of class names", () => {
+    const result = twc("bg-blue-500", ["text-white", ["p-4"]]);
+    expect(result).toBe("bg-blue-500 text-white p-4");
+  });
+
+  it("should handle an array of class names with an array of class names with conditional classes", () => {
+    const isActive = true;
+    const result = twc("bg-blue-500", ["text-white", ["font-bold", isActive]]);
+    expect(result).toBe("bg-blue-500 text-white font-bold");
+  });
+
+  it("should handle an array of class names with an array of class names with null and undefined values", () => {
+    const result = twc("bg-blue-500", ["text-white", ["p-4", null, undefined]]);
+    expect(result).toBe("bg-blue-500 text-white p-4");
+  });
 });
