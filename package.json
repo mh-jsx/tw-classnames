@@ -1,6 +1,6 @@
 {
   "name": "tw-classnames",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A lightweight utility function that simplifies the process of merging Tailwind Classes.",
   "main": "twc.js",
   "scripts": {
